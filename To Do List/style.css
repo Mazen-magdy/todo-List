@@ -1,0 +1,128 @@
+/* #opening{
+  width: 100%;
+  height: 1000px;
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  background-color: #593be4
+}
+@keyframes animation {
+ 100%{
+   width: 0px;
+ }
+} */
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-family: cursive;
+}
+#footer{
+  position: fixed;
+  bottom: 2;
+  padding: 2%;
+  width: 96%;
+  display: flex;
+  border-top: 2px solid lightgray;
+  box-shadow: 0px 5px 5px  #888;
+  border-radius: 3px;
+}
+#form{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+input{
+  border: 2px solid  #000;
+  border-radius: 5px;
+}
+#color:focus{
+animation-name: shadow;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+#text{
+    width: 90%;
+}
+#text:focus{
+  animation-name: shadow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes shadow {
+  100%{
+    box-shadow: 5px 10px #888888;
+  }
+}
+#submit{
+  cursor: pointer;
+}
+
+/*                         tasks-section                             */
+#tasks{
+  width: 100%;
+  height: 552px;
+  text-align: center;
+}
+#tasks #container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#container div{
+  margin: 3px;
+  margin-left:10%;
+  margin-right:10%;
+  background-color: #00f;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  /*    */
+}
+#container div div{
+  margin-left: 0;
+  background-color: inherit;
+
+}
+#container div button{
+background-color: inherit;
+border: 0;
+font-size: larger;
+line-height: 20px;
+color: #fff;
+margin-right: 0.75%;
+margin-top: -4.5%;
+display: flex;
+align-items: center;
+text-align: center;
+}
+#container div button:hover{
+  animation-name: smoth;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  cursor: pointer;
+}
+@keyframes smoth {
+
+  100%{background-color: white;
+     color: gray;
+     border-radius: 50%
+  }
+}
+#container div input{
+  width: 30px;
+  height: 20px;
+  margin-right: 20px;
+  margin-left: 0
+}
+#container div h1 {
+  text-align: center;
+  line-height: 1.5;
+}
